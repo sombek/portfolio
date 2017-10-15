@@ -43,9 +43,12 @@ p {
 }
 
 .section.dark {
-  background: #16151C;
+  background: #1D3557;
 }
 
+.section.gray {
+  background: #E5EDED;
+}
 .section-container.header-component {
   padding: 0;
 }
@@ -55,9 +58,15 @@ p {
 }
 
 .section.colored {
-  background: #D8AB94;
+  background: #A8DADC;
   /* background: #EBEBEB; */
 }
+
+.section.white {
+  background: #F1FAEE;
+  /* background: #EBEBEB; */
+}
+
 
 p.headline {
   margin-top: 0;
@@ -69,7 +78,7 @@ p.headline {
 }
 
 .header-section {
-  background: #16151C;
+  background: #457B9D;
 }
 
 p.text-justify {

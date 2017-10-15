@@ -86,23 +86,23 @@ class ContactComponent extends Component {
           <TextField hintText="Name" floatingLabelText="Name" style={{
             "width": "100%"
           }} floatingLabelFocusStyle={{
-            "color": "#A80202"
+            "color": "#E63946"
           }} underlineFocusStyle={{
-            "borderColor": "#A80202"
+            "borderColor": "#E63946"
           }} onChange={e => this.onUpdateField('name', e)}/>
           <TextField hintText="E-mail" floatingLabelText="E-mail" type="email" style={{
             "width": "100%"
           }} floatingLabelFocusStyle={{
-            "color": "#A80202"
+            "color": "#E63946"
           }} underlineFocusStyle={{
-            "borderColor": "#A80202"
+            "borderColor": "#E63946"
           }} onChange={e => this.onUpdateField('email', e)}/>
           <TextField hintText="Your message" floatingLabelText="Your message" style={{
             "width": "100%"
           }} multiLine={true} rows={2} floatingLabelFocusStyle={{
-            "color": "#A80202"
+            "color": "#E63946"
           }} underlineFocusStyle={{
-            "borderColor": "#A80202"
+            "borderColor": "#E63946"
           }} onChange={e => this.onUpdateField('message', e)}/> {this.state.errorMessage != null && <p className="error-message message">{this.state.errorMessage}</p>
           }
           {this.state.successMessage != null && <p className="success-message message">{this.state.successMessage}</p>
@@ -110,11 +110,11 @@ class ContactComponent extends Component {
 
           {
             this.state.loading &&
-            <LinearProgress mode="indeterminate" color="#A80202"/>
+            <LinearProgress mode="indeterminate" color="#E63946"/>
           }
 
           <div className="contact-btn">
-            <RaisedButton label="Send message" onClick={this.onSubmit.bind(this)} backgroundColor="#A80202" labelColor="#ffffff"/>
+            <RaisedButton label="Send message" onClick={this.onSubmit.bind(this)} backgroundColor="#E63946" labelColor="#ffffff"/>
           </div>
       </div>
     );

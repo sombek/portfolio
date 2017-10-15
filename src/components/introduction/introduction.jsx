@@ -9,9 +9,9 @@ class IntroductionComponent extends Component {
           <div className="introduction">
             <Avatar src="avatar.jpg" size={150}/>
             <p className="introduction-text">
-              Loves Javascript, cats and müsli.
-              Professional Cake-Eater. Defender of peace.
-              Software Developer, currently living in Freiburg, Germany.
+              Loves Javascript, geek and health.<br></br>
+              Professional Stake-Eater.<br></br>
+              Software Developer, Coding from Yanbu, Saudi Arabia.
             </p>
           </div>
         );
