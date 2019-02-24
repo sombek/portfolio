@@ -21,42 +21,54 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-          <BrowserDetectComponent></BrowserDetectComponent>
-          <ProgressComponent></ProgressComponent>
-          <div className="section header-section">
+          <BrowserDetectComponent/>
+          <ProgressComponent/>
+
+          <div className="section blue">
             <div className="section-container header-component">
-              <HeaderComponent></HeaderComponent>
-            </div>
-          </div>
-          <div className="section">
-            <div className="section-container">
-              <IntroductionComponent></IntroductionComponent>
-            </div>
-          </div>
-          <div className="section white">
-            <div className="section-container">
-              <TimelineComponent></TimelineComponent>
-            </div>
-          </div>
-			 <div className="section">
-            <div className="section-container">
-              <DesignComponent></DesignComponent>
-            </div>
-          </div>
-          <div className="section header-section">
-            <div className="section-container">
-              <ProgrammingComponent></ProgrammingComponent>
+              <HeaderComponent/>
             </div>
           </div>
 
           <div className="section">
             <div className="section-container">
-              <ContactComponent></ContactComponent>
+              <IntroductionComponent/>
             </div>
           </div>
+
           <div className="section gray">
+            <div className="section-container">
+              <TimelineComponent/>
+            </div>
+          </div>
+
+          <div className="section">
+            <div className="section-container">
+              <CodeGithubComponent/>
+            </div>
+          </div>
+
+          <div className="section gray">
+            <div className="section-container">
+              <ProgrammingComponent/>
+            </div>
+          </div>
+
+          <div className="section">
+            <div className="section-container">
+              <DesignComponent/>
+            </div>
+          </div>
+
+
+          <div className="section gray">
+            <div className="section-container">
+              <ContactComponent/>
+            </div>
+          </div>
+          <div className="section">
             <div className="section-container footer-component">
-              <FooterComponent></FooterComponent>
+              <FooterComponent/>
             </div>
           </div>
         </div>

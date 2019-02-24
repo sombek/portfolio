@@ -67,6 +67,14 @@ p {
   /* background: #EBEBEB; */
 }
 
+.section.lightBlue {
+  background: #A8DADC;
+}
+
+.section.blue {
+  background: #457B9D;
+}
+
 
 p.headline {
   margin-top: 0;
