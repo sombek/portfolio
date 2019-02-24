@@ -43,9 +43,9 @@ class App extends Component {
           </div>
 
           <div className="section">
-            <div className="section-container">
-              <CodeGithubComponent/>
-            </div>
+              <div className="section-container-projects">
+                  <CodeGithubComponent/>
+              </div>
           </div>
 
           <div className="section gray">

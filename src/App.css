@@ -42,6 +42,14 @@ p {
   padding-bottom: 160px;
 }
 
+.section-container-projects {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
 .section.dark {
   background: #1D3557;
 }
