@@ -37,15 +37,15 @@ class App extends Component {
           </div>
 
           <div className="section gray">
-            <div className="section-container">
+            <div className="section-container-timeline">
               <TimelineComponent/>
             </div>
           </div>
 
           <div className="section">
-              <div className="section-container-projects">
-                  <CodeGithubComponent/>
-              </div>
+            <div className="section-container-projects">
+              <CodeGithubComponent/>
+            </div>
           </div>
 
           <div className="section gray">
@@ -66,11 +66,13 @@ class App extends Component {
               <ContactComponent/>
             </div>
           </div>
+
           <div className="section">
             <div className="section-container footer-component">
               <FooterComponent/>
             </div>
           </div>
+
         </div>
       </MuiThemeProvider>
     );

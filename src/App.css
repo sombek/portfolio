@@ -42,12 +42,21 @@ p {
   padding-bottom: 160px;
 }
 
+.section-container-timeline {
+  width: 88%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
 .section-container-projects {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 160px;
-    padding-bottom: 160px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .section.dark {

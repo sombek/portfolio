@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import ArrowIcon from 'material-ui/svg-icons/hardware/keyboard-arrow-down';
 import SquareAnimationComponent from '../square-animation/square-animation';
+
 const scrollTo = require('scroll-to');
 import './header.css';
 
@@ -30,10 +32,7 @@ class HeaderComponent extends Component {
     }
 
     onScrollToIntro() {
-        scrollTo(0, this.state.scrollTo, {
-            ease: 'out-bounce',
-            duration: 2000
-        });
+        scrollTo(0, this.state.scrollTo, {duration: 500});
     }
 
     render() {
@@ -44,7 +43,11 @@ class HeaderComponent extends Component {
                 <h3>Abdullah Hashim</h3>
                 <h6>Software Developer</h6>
             </div>
-
+              <div className="scroll-down-btn">
+                  <FloatingActionButton mini={true} backgroundColor="#f50057" onClick={this.onScrollToIntro.bind(this)}>
+                      <ArrowIcon/>
+                  </FloatingActionButton>
+              </div>
           </div>
         );
     }
