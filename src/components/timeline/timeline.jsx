@@ -76,56 +76,57 @@ class TimelineComponent extends Component {
                     </Card>
                 </div>
 
-                  <div className="timeline-entry">
-                      <Card expanded={this.state.expanded2}
-                            onExpandChange={expanded => this.handleExpandChange(2, expanded)}>
-                          <CardHeader title="Summer Intern" subtitle="Saudi Aramco (2017 Jul - 2017 Aug)"
-                                      avatar={'https://pbs.twimg.com/profile_images/588260736356352000/trH9Ymww_400x400.jpg'}
-                                      actAsExpander={true} showExpandableButton={true}/>
+                <div className="timeline-entry">
+                    <Card expanded={this.state.expanded2}
+                          onExpandChange={expanded => this.handleExpandChange(2, expanded)}>
+                        <CardHeader title="Summer Intern" subtitle="Saudi Aramco (2017 Jul - 2017 Aug)"
+                                    avatar={'https://pbs.twimg.com/profile_images/588260736356352000/trH9Ymww_400x400.jpg'}
+                                    actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                              <div className="timeline-entries">
+                            <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
-                                  <Chip>Loss-Prevention drills</Chip>
+                                    <Chip>Loss-Prevention drills</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>Operational-Excellence Documentations</Chip>
+                                    <Chip>Operational-Excellence Documentations</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>BAT scripts Automation</Chip>
+                                    <Chip>BAT scripts Automation</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>Conducting Shutdown Database</Chip>
+                                    <Chip>Conducting Shutdown Database</Chip>
                                 </div>
-                              </div>
+                            </div>
                         </CardText>
                     </Card>
-                  </div>
+                </div>
 
                 <div className="timeline-entry">
                     <Card expanded={this.state.expanded1}
                           onExpandChange={expanded => this.handleExpandChange(1, expanded)}>
-                      <CardHeader title="Student" subtitle="Yanbu University College"
-                                  avatar={'http://www.rcyci.edu.sa/en/wp-content/uploads/2017/03/High-Res-YUC-Logo.jpg'}
-                                  actAsExpander={true} showExpandableButton={true}/>
-                      <CardText expandable={true}>
-                          Aug 2014 - May 2019. Bachelor of Computer Science, process automation and management, web and software development. 
+                        <CardHeader title="Student" subtitle="Yanbu University College"
+                                    avatar={'http://www.rcyci.edu.sa/en/wp-content/uploads/2017/03/High-Res-YUC-Logo.jpg'}
+                                    actAsExpander={true} showExpandableButton={true}/>
+                        <CardText expandable={true}>
+                            Aug 2014 - May 2019. Bachelor of Computer Science, process automation and management, web
+                            and software development.
 
-                          <div className="timeline-entries">
-                            <div className="timeline-entry-chip">
-                              <Chip>NodeJS</Chip>
+                            <div className="timeline-entries">
+                                <div className="timeline-entry-chip">
+                                    <Chip>NodeJS</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                    <Chip>Java SE</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                    <Chip>Data Structures</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                    <Chip>Web Developing</Chip>
+                                </div>
                             </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>Java SE</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>Data Structures</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>Web Developing</Chip>
-                            </div>
-                          </div>
-                      </CardText>
-                  </Card>
+                        </CardText>
+                    </Card>
                 </div>
             </div>
         );
