@@ -31,19 +31,20 @@ class TimelineComponent extends Component {
                                     avatar={'https://www.thesearchbase.com/static/img/core-img/android-icon-72x72.png'}
                                     actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                            My training was with resd and we did a lot of stuff here
+                            We have started this start up in UK, Cardiff to provide intelligent business solutions
+                            like chat-bots agents.
                             <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
-                                    <Chip>Loss-Prevention drills</Chip>
+                                    <Chip>Managing Resources</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                    <Chip>Operational-Excellence Documentations</Chip>
+                                    <Chip>React.js</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                    <Chip>BAT scripts Automation</Chip>
+                                    <Chip>Product Planning</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                    <Chip>Conducting Shutdown Database</Chip>
+                                    <Chip>Product Development</Chip>
                                 </div>
                             </div>
                         </CardText>
@@ -57,19 +58,22 @@ class TimelineComponent extends Component {
                                     avatar={'https://pbs.twimg.com/profile_images/588260736356352000/trH9Ymww_400x400.jpg'}
                                     actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                            My training was with resd and we did a lot of stuff here
+                            In 2018 Summer I started my Coop training for 7 months at Saudi Aramco with Petroleum
+                            Engineering Application Services Department (PEASD). <br/>
+                            The major tasks were about UI/UX designing, frontend web development using modern JS
+                            Frameworks like Angular5+
                             <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
-                                    <Chip>Loss-Prevention drills</Chip>
+                                    <Chip>Angular 5+</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                    <Chip>Operational-Excellence Documentations</Chip>
+                                    <Chip>Software Analysis</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                    <Chip>BAT scripts Automation</Chip>
+                                    <Chip>UI/UX Designing</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                    <Chip>Conducting Shutdown Database</Chip>
+                                    <Chip>Soft skills courses</Chip>
                                 </div>
                             </div>
                         </CardText>
@@ -83,6 +87,8 @@ class TimelineComponent extends Component {
                                     avatar={'https://pbs.twimg.com/profile_images/588260736356352000/trH9Ymww_400x400.jpg'}
                                     actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
+                            In 2017 Summer I took the initiative to train at Saudi Aramco and I did my training
+                            in the main data-center at Dhahran.
                             <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
                                     <Chip>Loss-Prevention drills</Chip>
@@ -104,13 +110,12 @@ class TimelineComponent extends Component {
                 <div className="timeline-entry">
                     <Card expanded={this.state.expanded1}
                           onExpandChange={expanded => this.handleExpandChange(1, expanded)}>
-                        <CardHeader title="Student" subtitle="Yanbu University College"
+                        <CardHeader title="Computer Science Student" subtitle="Yanbu University College"
                                     avatar={'http://www.rcyci.edu.sa/en/wp-content/uploads/2017/03/High-Res-YUC-Logo.jpg'}
                                     actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                            Aug 2014 - May 2019. Bachelor of Computer Science, process automation and management, web
-                            and software development.
-
+                            <b>Aug 2014 - May 2019</b> <br/>
+                            Bachelor of Computer Science
                             <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
                                     <Chip>NodeJS</Chip>
@@ -123,6 +128,9 @@ class TimelineComponent extends Component {
                                 </div>
                                 <div className="timeline-entry-chip">
                                     <Chip>Web Developing</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                    <Chip>Computer Architecture</Chip>
                                 </div>
                             </div>
                         </CardText>
