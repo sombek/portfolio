@@ -6,10 +6,7 @@ const scrollTo = require('scroll-to');
 class FooterComponent extends Component {
 
   onScrollToTop() {
-    scrollTo(0, 0, {
-      ease: 'out-bounce',
-      duration: 2000
-    });
+      scrollTo(0, 0);
   }
 
   render() {

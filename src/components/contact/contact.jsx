@@ -1,124 +1,97 @@
 import React, {Component} from 'react';
-import TextField from 'material-ui/TextField';
-import RaisedButton from 'material-ui/RaisedButton';
-import isEmail from 'validator/lib/isEmail';
-import LinearProgress from 'material-ui/LinearProgress';
-import './contact.css';
+import {withStyles} from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import FormControl from '@material-ui/core/FormControl';
+import TextField from '@material-ui/core/TextField';
+import Grid from '@material-ui/core/Grid';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import Email from '@material-ui/icons/Email';
+import CloudDownload from '@material-ui/icons/CloudDownload';
+import MobileFriendly from '@material-ui/icons/MobileFriendly';
+
+const styles = {
+  card: {},
+  margin: 10,
+  media: {
+    // ⚠️ object-fit is not supported by IE 11.
+    objectFit: 'cover',
+  },
+};
 
 class ContactComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      message: '',
-      email: '',
-      errorMessage: null,
-      successMessage: null,
-      messageAlreadySent: false,
-      loading: false
-    }
-  }
-
-  async componentDidMount() {}
-
-  componentWillUnmount() {}
-
-  validateString(str) {
-    if (!str || str < 1)
-      return false;
-    return true;
-  }
-
-  /**
-     * @throws
-     */
-  validateForm() {
-    if (!this.validateString(this.state.name))
-      throw new Error('Please enter your name.');
-    if (!isEmail(this.state.email))
-      throw new Error('Please enter a valid e-mail address.');
-    if (!this.validateString(this.state.message))
-      throw new Error('Please enter a message.');
-    }
-
-  async onSubmit() {
-    this.setState({successMessage: null});
-    this.setState({errorMessage: null});
-    this.displayLoadingBar();
-    try {
-      if (this.state.messageAlreadySent)
-        throw new Error('Your message has been already sent.');
-      this.validateForm();
-      await this.submitData();
-      this.setState({successMessage: 'Your message has been sent.'});
-      this.setState({messageAlreadySent: true});
-    } catch (err) {
-      this.setState({errorMessage: err.toString()});
-      this.setState({successMessage: null});
-    }
-    this.displayLoadingBar(false);
-  }
-
-  submitData() {
-    return fetch('https://formspree.io/info@myabdullah.com', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({name: this.state.name, email: this.state.email, message: this.state.message})
-    }).then(res => console.dir(res)).catch(e => console.dir(e));
-  }
-
-  onUpdateField(field, event) {
-    this.setState({[field]: event.target.value});
-  }
-  displayLoadingBar(to = true) {
-    this.setState({loading: to});
-  }
 
   render() {
-    return (
+    const {classes} = this.props;
 
+    return (
       <div className="contact">
         <p className="headline">Contact</p>
-        <p>Are you nosy? Then write me a message:</p>
-          <TextField hintText="Name" floatingLabelText="Name" style={{
-            "width": "100%"
-          }} floatingLabelFocusStyle={{
-            "color": "#E63946"
-          }} underlineFocusStyle={{
-            "borderColor": "#E63946"
-          }} onChange={e => this.onUpdateField('name', e)}/>
-          <TextField hintText="E-mail" floatingLabelText="E-mail" type="email" style={{
-            "width": "100%"
-          }} floatingLabelFocusStyle={{
-            "color": "#E63946"
-          }} underlineFocusStyle={{
-            "borderColor": "#E63946"
-          }} onChange={e => this.onUpdateField('email', e)}/>
-          <TextField hintText="Your message" floatingLabelText="Your message" style={{
-            "width": "100%"
-          }} multiLine={true} rows={2} floatingLabelFocusStyle={{
-            "color": "#E63946"
-          }} underlineFocusStyle={{
-            "borderColor": "#E63946"
-          }} onChange={e => this.onUpdateField('message', e)}/> {this.state.errorMessage != null && <p className="error-message message">{this.state.errorMessage}</p>
-          }
-          {this.state.successMessage != null && <p className="success-message message">{this.state.successMessage}</p>
-          }
 
-          {
-            this.state.loading &&
-            <LinearProgress mode="indeterminate" color="#E63946"/>
-          }
+        <Card className={classes.card}>
+          <CardMedia
+              component="img"
+              alt="Contemplative Reptile"
+              className={classes.media}
+              height="140"
+              image="Abdullah.jpg"
+              title="Abdullah Hashim"
+          />
 
-          <div className="contact-btn">
-            <RaisedButton label="Send message" onClick={this.onSubmit.bind(this)} backgroundColor="#E63946" labelColor="#ffffff"/>
-          </div>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h1">
+              Abdullah Hashim
+            </Typography>
+
+            <FormControl fullWidth style={{marginBottom: '20px'}}>
+              <InputLabel htmlFor="input-with-icon-adornment">Mobile Number</InputLabel>
+              <Input
+                  readOnly
+                  defaultValue="+966-595585131"
+                  variant="outlined"
+                  startAdornment={
+                    <InputAdornment position="start">
+                      <MobileFriendly/>
+                    </InputAdornment>
+                  }
+              />
+            </FormControl>
+
+
+            <FormControl fullWidth style={{marginBottom: '20px'}}>
+              <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
+              <Input
+                  readOnly
+                  defaultValue="abdullah97hashim@gmail.com"
+                  variant="outlined"
+                  startAdornment={
+                    <InputAdornment position="start">
+                      <Email/>
+                    </InputAdornment>
+                  }
+              />
+            </FormControl>
+          </CardContent>
+
+          <CardActions>
+            <Button color="default" onClick={() => window.open('mailto:abdullah97hashim@gmail.com')}>
+              <Email/> Send Email
+            </Button>
+            <Button color="primary" onClick={() => window.open('abdullah_hashim_cv.pdf')}>
+              <CloudDownload/> Download CV
+            </Button>
+          </CardActions>
+        </Card>
       </div>
     );
   }
 }
 
-export default ContactComponent;
+export default withStyles(styles)(ContactComponent);
