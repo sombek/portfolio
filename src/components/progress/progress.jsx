@@ -1,53 +1,35 @@
 import React, {Component} from 'react';
-import $ from 'jquery';
 import './progress.css';
+import ScrollProgress from 'scrollprogress';
 
 
 class ProgressComponent extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          completed: 0,
-          windowHeight: 0,
-          domHeight: 0
-        };
-    }
+
+    state = {
+        completed: 0,
+    };
 
     async componentDidMount() {
-      this.setHeights();
-      window.addEventListener('scroll', this.handleScroll.bind(this));
+        window.addEventListener('scroll', this.handleScroll.bind(this));
     }
 
     componentWillUnmount() {
-      window.removeEventListener('scroll', this.handleScroll.bind(this));
+        window.removeEventListener('scroll', this.handleScroll.bind(this));
     }
 
-    setHeights() {
-      this.setState({
-        domHeight: $('body').height(),
-        windowHeight: $(window).height()
-      });
-    }
+    handleScroll = () => new ScrollProgress((x, y) => this.setState({completed: y * 100 + '%'}));
 
-    handleScroll(){
-      const scrollTop = $('body').scrollTop();
-      let position = Math.round((scrollTop / this.state.domHeight) * 100);
-      if(position > 98) position = 100;
-      this.setState({
-          completed: position + '%'
-      });
-    }
 
 
     render() {
         let progress = this.state.completed;
         return (
-          <div className="progress">
-            <div
-              className="progress-bar"
-              style={{"width": progress}}>
+            <div className="progress">
+                <div
+                    className="progress-bar"
+                    style={{"width": progress}}>
+                </div>
             </div>
-          </div>
         );
     }
 }

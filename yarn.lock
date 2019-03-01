@@ -5917,6 +5917,11 @@ react-event-listener@^0.6.2:
     prop-types "^15.6.0"
     warning "^4.0.1"
 
+react-ga@^2.5.7:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.5.7.tgz#1c80a289004bf84f84c26d46f3a6a6513081bf2e"
+  integrity sha512-UmATFaZpEQDO96KFjB5FRLcT6hFcwaxOmAJZnjrSiFN/msTqylq9G+z5Z8TYzN/dbamDTiWf92m6MnXXJkAivQ==
+
 react-is@^16.6.3, react-is@^16.7.0, react-is@^16.8.1:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.3.tgz#4ad8b029c2a718fc0cfc746c8d4e1b7221e5387d"
@@ -6455,6 +6460,11 @@ scroll-to@0.0.2:
   dependencies:
     component-raf "1.2.0"
     component-tween "1.2.0"
+
+scrollprogress@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/scrollprogress/-/scrollprogress-3.0.2.tgz#6b36c100b55fe3ef61fd7a17dd52dd6b1e468a81"
+  integrity sha1-azbBALVf4+9h/XoX3VLdax5GioE=
 
 "semver@2 || 3 || 4 || 5", semver@^5.1.0, semver@^5.3.0:
   version "5.6.0"

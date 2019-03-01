@@ -16,6 +16,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import Email from '@material-ui/icons/Email';
 import CloudDownload from '@material-ui/icons/CloudDownload';
 import MobileFriendly from '@material-ui/icons/MobileFriendly';
+import ReactGA from "react-ga";
 
 const styles = {
   card: {},
@@ -84,7 +85,13 @@ class ContactComponent extends Component {
             <Button color="default" onClick={() => window.open('mailto:abdullah97hashim@gmail.com')}>
               <Email/> Send Email
             </Button>
-            <Button color="primary" onClick={() => window.open('abdullah_hashim_cv.pdf')}>
+            <Button color="primary" onClick={() => {
+              ReactGA.event({
+                category: 'Open CV',
+                action: 'Clicked CV button'
+              });
+              window.open('abdullah_hashim_cv.pdf')
+            }}>
               <CloudDownload/> Download CV
             </Button>
           </CardActions>

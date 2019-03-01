@@ -16,7 +16,22 @@ import CodeGithubComponent from './components/code-github/code-github';
 import ContactComponent from './components/contact/contact';
 import FooterComponent from './components/footer/footer';
 
+import ReactGA from 'react-ga';
+
 class App extends Component {
+
+  componentDidMount() {
+    ReactGA.initialize({
+      trackingId: 'UA-123791717-1',
+      gaOptions: {
+        cookieDomain: 'none'
+      }
+    });
+
+    ReactGA.pageview('/');
+  }
+
+
   render() {
     return (
       <MuiThemeProvider>

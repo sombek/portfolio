@@ -18,6 +18,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import Fullscreen from '@material-ui/icons/Fullscreen';
 import Slide from '@material-ui/core/Slide';
 import Paper from '@material-ui/core/Paper';
+import ReactGA from 'react-ga';
 
 
 import IconButton from 'material-ui/IconButton';
@@ -80,7 +81,36 @@ class CodeGithubComponent extends Component {
         expanded4: false
     };
 
-    handleExpandChange = (key) => this.setState({[`expanded${key}`]: !this.state[`expanded${key}`]});
+    handleExpandChange = key => {
+        switch (key) {
+            case 1:
+                ReactGA.event({
+                    category: 'OpenCard',
+                    action: 'Open REOnline'
+                });
+                break;
+            case 2:
+                ReactGA.event({
+                    category: 'OpenCard',
+                    action: 'Open TSB'
+                });
+                break;
+            case 3:
+                ReactGA.event({
+                    category: 'OpenCard',
+                    action: 'Open DODA Tracking'
+                });
+                break;
+            case 4:
+                ReactGA.event({
+                    category: 'OpenCard',
+                    action: 'Open REPark'
+                });
+                break;
+        }
+
+        this.setState({[`expanded${key}`]: !this.state[`expanded${key}`]})
+    };
 
 
     render() {
@@ -161,13 +191,13 @@ class CodeGithubComponent extends Component {
 
                                     <Grid container direction="row" justify="center" spacing={16}>
                                         <Grid item md={6}>
-                                            <img src={'REO-Sketch.jpg'} alt="REO-Sketch" width={'100%'}/>
+                                            <img src={'./REO-Sketch.jpg'} alt="REO-Sketch" width={'100%'}/>
                                             <Typography component="p" align={'center'}>
                                                 Starting the sketches
                                             </Typography>
                                         </Grid>
                                         <Grid item md={6}>
-                                            <img src={'REO-Interface.png'} alt="REO-Interface" width={'100%'}/>
+                                            <img src={'./REO-Interface.png'} alt="REO-Interface" width={'100%'}/>
                                             <Typography component="p" align={'center'}>
                                                 Implementing the sketches
                                             </Typography>
@@ -282,13 +312,13 @@ class CodeGithubComponent extends Component {
 
                                     <Grid container direction="row" justify="center" spacing={16}>
                                         <Grid item md={6}>
-                                            <img src={'TSB-Flowchart.png'} alt="TSB-Flowchart" width={'100%'}/>
+                                            <img src={'./TSB-Flowchart.png'} alt="TSB-Flowchart" width={'100%'}/>
                                             <Typography component="p" align={'center'}>
                                                 Flowcharts sketch
                                             </Typography>
                                         </Grid>
                                         <Grid item md={6}>
-                                            <img src={'TSB-GIF.gif'} alt="TSB-GIF" width={'100%'}/>
+                                            <img src={'./TSB-GIF.gif'} alt="TSB-GIF" width={'100%'}/>
                                             <Typography component="p" align={'center'}>
                                                 Demo over the dashboard page
                                             </Typography>
@@ -392,13 +422,13 @@ class CodeGithubComponent extends Component {
 
                                     <Grid container direction="row" justify="center" spacing={16}>
                                         <Grid item md={6}>
-                                            <img src={'DODA-Challenge.png'} alt="DODA-Challenge" width={'100%'}/>
+                                            <img src={'./DODA-Challenge.png'} alt="DODA-Challenge" width={'100%'}/>
                                             <Typography component="p" align={'center'}>
                                                 The challenge showing the points to be matched
                                             </Typography>
                                         </Grid>
                                         <Grid item md={6}>
-                                            <img src={'DODA-Solution.gif'} alt="DODA-Solution" width={'100%'}/>
+                                            <img src={'./DODA-Solution.gif'} alt="DODA-Solution" width={'100%'}/>
                                             <Typography component="p" align={'center'}>
                                                 Image shows the pixel level analysis
                                             </Typography>
@@ -510,19 +540,19 @@ class CodeGithubComponent extends Component {
 
                                     <Grid container direction="row" justify="center" spacing={16}>
                                         <Grid item md={4}>
-                                            <img src={'REPark-Logo.png'} alt="REPark-Logo" width={'100%'}/>
+                                            <img src={'./REPark-Logo.png'} alt="REPark-Logo" width={'100%'}/>
                                             <Typography component="p" align={'center'}>
                                                 Splash Page
                                             </Typography>
                                         </Grid>
                                         <Grid item md={4}>
-                                            <img src={'REPark-Host.png'} alt="REPark-Host" width={'100%'}/>
+                                            <img src={'./REPark-Host.png'} alt="REPark-Host" width={'100%'}/>
                                             <Typography component="p" align={'center'}>
                                                 Host form interface
                                             </Typography>
                                         </Grid>
                                         <Grid item md={4}>
-                                            <img src={'REPark-Client.png'} alt="REPark-Client" width={'100%'}/>
+                                            <img src={'./REPark-Client.png'} alt="REPark-Client" width={'100%'}/>
                                             <Typography component="p" align={'center'}>
                                                 Client interface
                                             </Typography>
