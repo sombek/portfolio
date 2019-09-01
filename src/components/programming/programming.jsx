@@ -52,7 +52,7 @@ class ProgrammingComponent extends Component {
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Angular 2</span>
+                                            <span className="html-2">Angular</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>

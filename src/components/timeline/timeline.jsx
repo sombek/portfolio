@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
-import {
-    Card,
-    CardHeader,
-    CardText
-} from 'material-ui/Card';
+import {Card, CardHeader, CardText} from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
 import './timeline.css';
 
@@ -13,7 +9,8 @@ class TimelineComponent extends Component {
         expanded1: false,
         expanded2: false,
         expanded3: false,
-        expanded4: false
+        expanded4: false,
+        expanded5: false
     };
 
     handleExpandChange = (key, expanded) => this.setState({[`expanded${key}`]: expanded});
@@ -22,7 +19,37 @@ class TimelineComponent extends Component {
     render() {
         return (
             <div className="timeline">
-                <p className="headline">Work experience</p>
+                <p className="headline">Work experience & Education</p>
+
+
+                <div className="timeline-entry">
+                    <Card expanded={this.state.expanded5}
+                          onExpandChange={expanded => this.handleExpandChange(5, expanded)}>
+                        <CardHeader title="Software Engineer" subtitle="Ministry Of Justice (2019 Jun - Now)"
+                                    avatar={'https://pbs.twimg.com/profile_images/1044835707871776769/P1gr1QYZ_400x400.jpg'}
+                                    actAsExpander={true} showExpandableButton={true}/>
+                        <CardText expandable={true}>
+                            Real Estate Digitization project with Vision Realization Office.
+                            Working as full time web developer focused on user interfaces development.
+                            Using several of latest technologies
+                            <div className="timeline-entries">
+                                <div className="timeline-entry-chip">
+                                    <Chip>Agile practices</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                    <Chip>Angular Framework</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                    <Chip>Nuxeo</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                    <Chip>Process Automation</Chip>
+                                </div>
+                            </div>
+                        </CardText>
+                    </Card>
+                </div>
+
 
                 <div className="timeline-entry">
                     <Card expanded={this.state.expanded4}
@@ -110,12 +137,11 @@ class TimelineComponent extends Component {
                 <div className="timeline-entry">
                     <Card expanded={this.state.expanded1}
                           onExpandChange={expanded => this.handleExpandChange(1, expanded)}>
-                        <CardHeader title="Computer Science Student" subtitle="Yanbu University College"
+                        <CardHeader title="Computer Science Student" subtitle="Yanbu University College (Aug 2014 - May 2019)"
                                     avatar={'http://www.rcyci.edu.sa/en/wp-content/uploads/2017/03/High-Res-YUC-Logo.jpg'}
                                     actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                            <b>Aug 2014 - May 2019</b> <br/>
-                            Bachelor of Computer Science
+                            Bachelor of Computer Science with A grade
                             <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
                                     <Chip>NodeJS</Chip>

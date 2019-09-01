@@ -12,10 +12,9 @@ class DesignComponent extends Component {
           <div className="design">
             <p className="headline">User Experience and Design</p>
             <p className="text-justify">
-				  Since I was young I fell in love with Photoshop.
-              Ever since, I tried to make everything fancy.
-              Nowadays, with a user-centered mindset, I try to develop intuitive, mobile and content first applications.
-
+                Since I was young I fell in love with Photoshop.
+                Ever since, I tried to make everything fancy.
+                Nowadays, with a user-centered mindset, I try to develop intuitive, mobile and content first applications.
             </p>
 
               <div className="design-checkbox">
@@ -31,7 +30,7 @@ class DesignComponent extends Component {
                 checkedIcon={<ActionFavorite />}
                 uncheckedIcon={<ActionFavoriteBorder />}
                 iconStyle={{"fill":"#A80202"}}
-                label="Adobe Photoshop"
+                label="Adobe XD"
               />
             </div>
             <div className="design-checkbox">
@@ -39,7 +38,7 @@ class DesignComponent extends Component {
                 checkedIcon={<ActionFavorite />}
                 uncheckedIcon={<ActionFavoriteBorder />}
                 iconStyle={{"fill":"#A80202"}}
-                label="Adobe Illustrator"
+                label="Figma"
               />
             </div>
 

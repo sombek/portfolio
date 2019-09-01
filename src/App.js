@@ -18,19 +18,11 @@ import FooterComponent from './components/footer/footer';
 
 import ReactGA from 'react-ga';
 
+ReactGA.initialize('UA-108447545-2');
+
 class App extends Component {
 
-  componentDidMount() {
-    ReactGA.initialize({
-      trackingId: 'UA-123791717-1',
-      gaOptions: {
-        cookieDomain: 'none'
-      }
-    });
-
-    ReactGA.pageview('/');
-  }
-
+  componentDidMount = () => ReactGA.pageview('/home');
 
   render() {
     return (
@@ -71,18 +63,23 @@ class App extends Component {
 
           <div className="section">
             <div className="section-container">
+              <AgileComponent/>
+            </div>
+          </div>
+
+          <div className="section gray">
+            <div className="section-container">
               <DesignComponent/>
             </div>
           </div>
 
-
-          <div className="section gray">
+          <div className="section">
             <div className="section-container">
               <ContactComponent/>
             </div>
           </div>
 
-          <div className="section">
+          <div className="section gray">
             <div className="section-container footer-component">
               <FooterComponent/>
             </div>
