@@ -107,6 +107,7 @@ class CodeGithubComponent extends Component {
                     action: 'Open REPark'
                 });
                 break;
+            default:
         }
 
         this.setState({[`expanded${key}`]: !this.state[`expanded${key}`]})
@@ -243,7 +244,8 @@ class CodeGithubComponent extends Component {
                                 title="TheSearchBase"
                             />
                             <CardContent>
-                                <a href="https://TheSearchBase.com" target={'_blank'}>TheSearchBase.com</a>
+                                <a href="https://TheSearchBase.com" rel="noopener noreferrer"
+                                   target={'_blank'}>TheSearchBase.com</a>
                                 <Typography component="p">
                                     TheSearchBase is project started in Summer 2018, its aim to provide
                                     intelligent chat bots services to businesses.
@@ -305,6 +307,7 @@ class CodeGithubComponent extends Component {
                                     <Typography component="p">
                                         You can visit the link and register to have demo here: <br/>
                                         <a href="https://TheSearchBase.com"
+                                           rel="noopener noreferrer"
                                            target={'_blank'}>https://TheSearchBase.com</a>
                                     </Typography>
 

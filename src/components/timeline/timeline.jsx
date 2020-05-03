@@ -26,24 +26,27 @@ class TimelineComponent extends Component {
                     <Card expanded={this.state.expanded5}
                           onExpandChange={expanded => this.handleExpandChange(5, expanded)}>
                         <CardHeader title="Software Engineer" subtitle="Ministry Of Justice (2019 Jun - Now)"
-                                    avatar={'https://pbs.twimg.com/profile_images/1044835707871776769/P1gr1QYZ_400x400.jpg'}
+                                    avatar={'MOJ-Logo.png'}
                                     actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                            Real Estate Digitization project with Vision Realization Office.
-                            Working as full time web developer focused on user interfaces development.
-                            Using several of latest technologies
+                            <h3 style={{margin:0}}>
+                                Vision Realization Office - Real Estate Digitization
+                            </h3>
+                            <p>
+                                Working on special projects, working from ideas to production ready products
+                            </p>
                             <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
                                     <Chip>Agile practices</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                    <Chip>Angular Framework</Chip>
+                                    <Chip>Frontend Frameworks</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                    <Chip>Nuxeo</Chip>
+                                    <Chip>DevOps Practices</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                    <Chip>Process Automation</Chip>
+                                    <Chip>DotNet Core</Chip>
                                 </div>
                             </div>
                         </CardText>
@@ -54,8 +57,8 @@ class TimelineComponent extends Component {
                 <div className="timeline-entry">
                     <Card expanded={this.state.expanded4}
                           onExpandChange={expanded => this.handleExpandChange(4, expanded)}>
-                        <CardHeader title="Co-Founder & Software Developer" subtitle="The Search Base (2018 Nov - Now)"
-                                    avatar={'https://www.thesearchbase.com/static/img/core-img/android-icon-72x72.png'}
+                        <CardHeader title="Co-Founder & Software Developer" subtitle="Search Base (2018 Nov - 2019 Dec)"
+                                    avatar={'TSB-Logo.png'}
                                     actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
                             We have started this start up in UK, Cardiff to provide intelligent business solutions

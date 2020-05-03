@@ -68,17 +68,11 @@ class App extends Component {
 
                     <div className="section gray">
                         <div className="section-container">
-                            <DesignComponent/>
-                        </div>
-                    </div>
-
-                    <div className="section">
-                        <div className="section-container">
                             <ContactComponent/>
                         </div>
                     </div>
 
-                    <div className="section gray">
+                    <div className="section">
                         <div className="section-container footer-component">
                             <FooterComponent/>
                         </div>

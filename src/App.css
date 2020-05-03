@@ -3,123 +3,123 @@
  */
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  color: #212121 !important;
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #212121 !important;
+    overflow-x: hidden;
 }
 
 h3 {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 h6 {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 p, span {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 p {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .section {
-  padding-left: 5%;
-  padding-right: 5%;
-  position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
 }
 
 .section-container {
-  width: 100%;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 160px;
-  padding-bottom: 160px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
 
 .section-container-timeline {
-  width: 88%;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 160px;
-  padding-bottom: 160px;
+    width: 88%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
 
 .section-container-contact {
-  width: 88%;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 160px;
-  padding-bottom: 160px;
+    width: 88%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
 
 .section-container-projects {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 160px;
-  padding-bottom: 160px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
 
 .section.dark {
-  background: #1D3557;
+    background: #1D3557;
 }
 
 .section.gray {
-  background: #E5EDED;
+    background: #E5EDED;
 }
 
 .section-container.header-component {
-  padding: 0;
+    padding: 0;
 }
 
 .section-container.footer-component {
-  padding: 0;
+    padding: 0;
 }
 
 .section.colored {
-  background: #A8DADC;
-  /* background: #EBEBEB; */
+    background: #A8DADC;
+    /* background: #EBEBEB; */
 }
 
 .section.white {
-  background: #F1FAEE;
-  /* background: #EBEBEB; */
+    background: #F1FAEE;
+    /* background: #EBEBEB; */
 }
 
 .section.lightBlue {
-  background: #A8DADC;
+    background: #A8DADC;
 }
 
 .section.blue {
-  background: #457B9D;
+    background: #457B9D;
 }
 
 
 p.headline {
-  margin-top: 0;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 3px;
-  font-size: 10pt;
-  opacity: 0.8;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 10pt;
+    opacity: 0.8;
 }
 
 .header-section {
-  background: #457B9D;
+    background: #457B9D;
 }
 
 p.text-justify {
-  text-align: justify;
+    text-align: justify;
 }
 
 p.text-center {
-  text-align: center;
+    text-align: center;
 }
