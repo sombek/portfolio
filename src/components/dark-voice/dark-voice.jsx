@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import MicrophoneIcon from 'material-ui/svg-icons/av/mic';
 import MicrophoneOffIcon from 'material-ui/svg-icons/av/mic-off';
-import  {Howl} from 'howler';
+import {Howl} from 'howler';
 import './dark-voice.css';
 
 const darkVoiceSound = new Howl({

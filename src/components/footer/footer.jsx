@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './footer.css';
 import FlatButton from 'material-ui/FlatButton';
+
 const scrollTo = require('scroll-to');
 
 class FooterComponent extends Component {

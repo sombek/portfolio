@@ -9,7 +9,6 @@ import HeaderComponent from './components/header/header';
 import IntroductionComponent from './components/introduction/introduction';
 import TimelineComponent from './components/timeline/timeline';
 import ProgrammingComponent from './components/programming/programming';
-import AgileQuoteComponent from './components/agile-quote/agile-quote';
 import AgileComponent from './components/agile/agile';
 import DesignComponent from './components/design/design';
 import CodeGithubComponent from './components/code-github/code-github';
@@ -22,73 +21,73 @@ ReactGA.initialize('UA-108447545-2');
 
 class App extends Component {
 
-  componentDidMount = () => ReactGA.pageview('/home');
+    componentDidMount = () => ReactGA.pageview('/home');
 
-  render() {
-    return (
-      <MuiThemeProvider>
-        <div className="App">
-          <BrowserDetectComponent/>
-          <ProgressComponent/>
+    render() {
+        return (
+            <MuiThemeProvider>
+                <div className="App">
+                    <BrowserDetectComponent/>
+                    <ProgressComponent/>
 
-          <div className="section blue">
-            <div className="section-container header-component">
-              <HeaderComponent/>
-            </div>
-          </div>
+                    <div className="section blue">
+                        <div className="section-container header-component">
+                            <HeaderComponent/>
+                        </div>
+                    </div>
 
-          <div className="section">
-            <div className="section-container">
-              <IntroductionComponent/>
-            </div>
-          </div>
+                    <div className="section">
+                        <div className="section-container">
+                            <IntroductionComponent/>
+                        </div>
+                    </div>
 
-          <div className="section gray">
-            <div className="section-container-timeline">
-              <TimelineComponent/>
-            </div>
-          </div>
+                    <div className="section gray">
+                        <div className="section-container-timeline">
+                            <TimelineComponent/>
+                        </div>
+                    </div>
 
-          <div className="section">
-            <div className="section-container-projects">
-              <CodeGithubComponent/>
-            </div>
-          </div>
+                    <div className="section">
+                        <div className="section-container-projects">
+                            <CodeGithubComponent/>
+                        </div>
+                    </div>
 
-          <div className="section gray">
-            <div className="section-container">
-              <ProgrammingComponent/>
-            </div>
-          </div>
+                    <div className="section gray">
+                        <div className="section-container">
+                            <ProgrammingComponent/>
+                        </div>
+                    </div>
 
-          <div className="section">
-            <div className="section-container">
-              <AgileComponent/>
-            </div>
-          </div>
+                    <div className="section">
+                        <div className="section-container">
+                            <AgileComponent/>
+                        </div>
+                    </div>
 
-          <div className="section gray">
-            <div className="section-container">
-              <DesignComponent/>
-            </div>
-          </div>
+                    <div className="section gray">
+                        <div className="section-container">
+                            <DesignComponent/>
+                        </div>
+                    </div>
 
-          <div className="section">
-            <div className="section-container">
-              <ContactComponent/>
-            </div>
-          </div>
+                    <div className="section">
+                        <div className="section-container">
+                            <ContactComponent/>
+                        </div>
+                    </div>
 
-          <div className="section gray">
-            <div className="section-container footer-component">
-              <FooterComponent/>
-            </div>
-          </div>
+                    <div className="section gray">
+                        <div className="section-container footer-component">
+                            <FooterComponent/>
+                        </div>
+                    </div>
 
-        </div>
-      </MuiThemeProvider>
-    );
-  }
+                </div>
+            </MuiThemeProvider>
+        );
+    }
 }
 
 export default App;

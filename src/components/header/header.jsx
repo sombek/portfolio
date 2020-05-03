@@ -2,16 +2,16 @@ import React, {Component} from 'react';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ArrowIcon from 'material-ui/svg-icons/hardware/keyboard-arrow-down';
 import SquareAnimationComponent from '../square-animation/square-animation';
+import './header.css';
 
 const scrollTo = require('scroll-to');
-import './header.css';
 
 class HeaderComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          height: props.height,
-          scrollTo: props.height
+            height: props.height,
+            scrollTo: props.height
         };
     }
 
