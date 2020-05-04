@@ -141,7 +141,7 @@ class TimelineComponent extends Component {
                     <Card expanded={this.state.expanded1}
                           onExpandChange={expanded => this.handleExpandChange(1, expanded)}>
                         <CardHeader title="Computer Science Student" subtitle="Yanbu University College (Aug 2014 - May 2019)"
-                                    avatar={'http://www.rcyci.edu.sa/en/wp-content/uploads/2017/03/High-Res-YUC-Logo.jpg'}
+                                    avatar={'High-Res-YUC-Logo.jpg'}
                                     actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
                             Bachelor of Computer Science with A grade
