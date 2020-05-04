@@ -43,7 +43,8 @@ p {
 }
 
 .section-container-timeline {
-    width: 88%;
+    position: relative;
+    width: 87%;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
