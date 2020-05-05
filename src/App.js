@@ -67,7 +67,7 @@ class App extends Component {
                     </div>
 
                     <div className="section gray">
-                        <div className="section-container" style={{paddingTop: 0}}>
+                        <div className="section-container" style={{paddingTop: 0,paddingBottom:100}}>
                             <ContactComponent/>
                         </div>
                     </div>

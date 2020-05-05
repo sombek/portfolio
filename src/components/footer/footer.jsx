@@ -13,22 +13,6 @@ class FooterComponent extends Component {
     render() {
         return (
             <div className="footer">
-                <div className="link-list">
-                    <a target="_blank"
-                       rel="noopener noreferrer"
-                       href="https://github.com/sombek">
-                        Github
-                    </a>
-                    |
-                    <a rel="noopener noreferrer"
-                       target="_blank" href="https://twitter.com/sombekcs">
-                        Twitter
-                    </a>
-                    |
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/Abdullah-hashim">
-                        LinkedIn
-                    </a>
-                </div>
                 <FlatButton labelStyle={{
                     "color": "rgba(0, 0, 0, 0.65)"
                 }} label="Back to top" onClick={this.onScrollToTop}/>

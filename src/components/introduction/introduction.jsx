@@ -14,7 +14,8 @@ class IntroductionComponent extends Component {
                     <div className='tetromino box3'/>
                     <div className='tetromino box4'/>
                 </div>
-                <Avatar src="avatar.jpg" size={150} style={{marginBottom: 20, marginTop: 80}}/>
+
+                <Avatar src="avatar.jpg" size={150} style={{marginBottom: 20, marginTop: 160}}/>
 
                 <p>
                     In the world of 1000 frameworks, I'm fighting for the cause of
