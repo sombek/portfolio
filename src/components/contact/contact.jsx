@@ -14,88 +14,101 @@ import Email from '@material-ui/icons/Email';
 import CloudDownload from '@material-ui/icons/CloudDownload';
 import MobileFriendly from '@material-ui/icons/MobileFriendly';
 import ReactGA from "react-ga";
+import Lottie from 'react-lottie';
+import * as animationData from './pineapple.json'
 
 const styles = {
-  card: {},
-  margin: 10,
-  media: {
-    // ⚠️ object-fit is not supported by IE 11.
-    objectFit: 'cover',
-  },
+    card: {},
+    margin: 10,
+    media: {
+        // ⚠️ object-fit is not supported by IE 11.
+        objectFit: 'cover',
+    },
 };
 
 class ContactComponent extends Component {
 
-  render() {
-    const {classes} = this.props;
+    render() {
+        const {classes} = this.props;
+        const defaultOptions = {
+            loop: true,
+            autoplay: true,
+            animationData: animationData.default,
+            rendererSettings: {
+                preserveAspectRatio: 'xMidYMid slice'
+            }
+        };
 
-    return (
-      <div className="contact">
-        <p className="headline">Contact</p>
+        return (
+            <div className="contact">
+                <Lottie options={defaultOptions}
+                        height={300}
+                        width={300}/>
+                <p className="headline">Contact</p>
 
-        <Card className={classes.card}>
-          <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              className={classes.media}
-              height="140"
-              image="Abdullah.jpg"
-              title="Abdullah Hashim"
-          />
+                <Card className={classes.card}>
+                    <CardMedia
+                        component="img"
+                        alt="Contemplative Reptile"
+                        className={classes.media}
+                        height="140"
+                        image="Abdullah.jpg"
+                        title="Abdullah Hashim"
+                    />
 
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h1">
-              Abdullah Hashim
-            </Typography>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h1">
+                            Abdullah Hashim
+                        </Typography>
 
-            <FormControl fullWidth style={{marginBottom: '20px'}}>
-              <InputLabel htmlFor="input-with-icon-adornment">Mobile Number</InputLabel>
-              <Input
-                  readOnly
-                  defaultValue="+966-595585131"
-                  variant="outlined"
-                  startAdornment={
-                    <InputAdornment position="start">
-                      <MobileFriendly/>
-                    </InputAdornment>
-                  }
-              />
-            </FormControl>
+                        <FormControl fullWidth style={{marginBottom: '20px'}}>
+                            <InputLabel htmlFor="input-with-icon-adornment">Mobile Number</InputLabel>
+                            <Input
+                                readOnly
+                                defaultValue="+966-595585131"
+                                variant="outlined"
+                                startAdornment={
+                                    <InputAdornment position="start">
+                                        <MobileFriendly/>
+                                    </InputAdornment>
+                                }
+                            />
+                        </FormControl>
 
 
-            <FormControl fullWidth style={{marginBottom: '20px'}}>
-              <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
-              <Input
-                  readOnly
-                  defaultValue="abdullah97hashim@gmail.com"
-                  variant="outlined"
-                  startAdornment={
-                    <InputAdornment position="start">
-                      <Email/>
-                    </InputAdornment>
-                  }
-              />
-            </FormControl>
-          </CardContent>
+                        <FormControl fullWidth style={{marginBottom: '20px'}}>
+                            <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
+                            <Input
+                                readOnly
+                                defaultValue="abdullah97hashim@gmail.com"
+                                variant="outlined"
+                                startAdornment={
+                                    <InputAdornment position="start">
+                                        <Email/>
+                                    </InputAdornment>
+                                }
+                            />
+                        </FormControl>
+                    </CardContent>
 
-          <CardActions>
-            <Button color="default" onClick={() => window.open('mailto:abdullah97hashim@gmail.com')}>
-              <Email/> Send Email
-            </Button>
-            <Button color="primary" onClick={() => {
-              ReactGA.event({
-                category: 'Open CV',
-                action: 'Clicked CV button'
-              });
-              window.open('abdullah_hashim_cv.pdf')
-            }}>
-              <CloudDownload/> Download CV
-            </Button>
-          </CardActions>
-        </Card>
-      </div>
-    );
-  }
+                    <CardActions>
+                        <Button color="default" onClick={() => window.open('mailto:abdullah97hashim@gmail.com')}>
+                            <Email/> Send Email
+                        </Button>
+                        <Button color="primary" onClick={() => {
+                            ReactGA.event({
+                                category: 'Open CV',
+                                action: 'Clicked CV button'
+                            });
+                            window.open('abdullah_hashim_cv.pdf')
+                        }}>
+                            <CloudDownload/> Download CV
+                        </Button>
+                    </CardActions>
+                </Card>
+            </div>
+        );
+    }
 }
 
 export default withStyles(styles)(ContactComponent);

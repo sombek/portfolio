@@ -10,7 +10,7 @@ import IntroductionComponent from './components/introduction/introduction';
 import TimelineComponent from './components/timeline/timeline';
 import ProgrammingComponent from './components/programming/programming';
 import AgileComponent from './components/agile/agile';
-import CodeGithubComponent from './components/code-github/code-github';
+import ProjectsComponent from './components/projects/projects';
 import ContactComponent from './components/contact/contact';
 import FooterComponent from './components/footer/footer';
 
@@ -50,7 +50,7 @@ class App extends Component {
 
                     <div className="section">
                         <div className="section-container-projects">
-                            <CodeGithubComponent/>
+                            <ProjectsComponent/>
                         </div>
                     </div>
 
@@ -67,7 +67,7 @@ class App extends Component {
                     </div>
 
                     <div className="section gray">
-                        <div className="section-container">
+                        <div className="section-container" style={{paddingTop: 0}}>
                             <ContactComponent/>
                         </div>
                     </div>

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Card, CardHeader, CardText} from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
 import './timeline.css';
+import ContactMeComponent from "../contact-me/contact-me";
 
 class TimelineComponent extends Component {
 
@@ -19,30 +20,16 @@ class TimelineComponent extends Component {
     render() {
         return (
             <div className="timeline">
-                <div id="container">
-                    Make
-                    <div id="flip">
-                        <div>
-                            <div>wOrK</div>
-                        </div>
-                        <div>
-                            <div>lifeStyle</div>
-                        </div>
-                        <div>
-                            <div>Everything</div>
-                        </div>
-                    </div>
-                    AweSoMe!
-                </div>
+                <ContactMeComponent/>
 
                 <p className="headline">Work experience & Education</p>
 
                 <div className="timeline-entry">
                     <Card expanded={this.state.expanded5}
                           onExpandChange={expanded => this.handleExpandChange(5, expanded)}>
+
                         <CardHeader title="Software Engineer" subtitle="Ministry Of Justice (2019 Jun - Now)"
                                     avatar={'https://cdn6.aptoide.com/imgs/8/f/6/8f66d8559e9623fbb45b3ca9c96e52c6_icon.png'}
-
                                     actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true} style={{paddingTop: 0}}>
                             <h3>
@@ -68,7 +55,6 @@ class TimelineComponent extends Component {
                         </CardText>
                     </Card>
                 </div>
-
 
                 <div className="timeline-entry">
                     <Card expanded={this.state.expanded4}

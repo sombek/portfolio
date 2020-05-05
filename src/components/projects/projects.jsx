@@ -23,7 +23,8 @@ import ReactGA from 'react-ga';
 
 import IconButton from 'material-ui/IconButton';
 
-import './code-github.css';
+import './projects.css';
+import MakeAwesomeComponent from "../make-awesome/make-awesome";
 
 
 const styles = theme => ({
@@ -72,7 +73,7 @@ function Transition(props) {
     return <Slide direction="up" {...props} />;
 }
 
-class CodeGithubComponent extends Component {
+class ProjectsComponent extends Component {
 
     state = {
         expanded1: false,
@@ -119,6 +120,7 @@ class CodeGithubComponent extends Component {
 
         return (
             <div className="code-github">
+                <MakeAwesomeComponent/>
                 <p className="headline">Look at my projects!</p>
                 <Grid container direction="row" justify="center" alignItems="flex-start" spacing={16}>
                     <Grid item md={3}>
@@ -589,4 +591,4 @@ class CodeGithubComponent extends Component {
     }
 }
 
-export default withStyles(styles)(CodeGithubComponent);
+export default withStyles(styles)(ProjectsComponent);
