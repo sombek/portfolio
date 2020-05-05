@@ -6,7 +6,7 @@ const scrollTo = require('scroll-to');
 
 class ContactMeComponent extends Component {
     onScrollToIntro() {
-        scrollTo(0, 7500, {duration: 2500});
+        scrollTo(0, 5550, {duration: 1500});
     }
 
     render() {
