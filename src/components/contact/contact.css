@@ -1,10 +1,10 @@
 .contact {
     background: white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 2vw 2vw 30px;
     position: relative;
     top: -17px;
-    border: 1px solid #555656;
+    border: 1px solid #e4e4e4;
 }
 
 .text-field {
