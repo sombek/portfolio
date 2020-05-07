@@ -85,7 +85,7 @@ class ProjectsComponent extends Component {
                             <CardHeader image={'DODA.png'}/>
                             <CardBody title={'DODA Tracking'}
                                       position={'Hackathon Project'}
-                                      text={'DODA or Worm Tracking project is the winner project at Upstream Saudi Aramco Hackathon which I participate in while my COOP training at Saudi Aramco Dhahran 2018. Which is implemented by using Image processing technologies using Python language'}/>
+                                      text={'DODA or Worm Tracking project is the winner project at Upstream Saudi Aramco Hackathon which I participate in while my COOP training at Saudi Aramco Dhahran 2018. Which is implemented by using Image processing technologies using Python🐍 language'}/>
                         </div>
 
                         <div className="card">

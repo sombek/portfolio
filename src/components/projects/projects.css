@@ -8,7 +8,8 @@ and (max-device-width: 480px){
     }
 
     div.cards-row .card {
-        margin-bottom: 10px;
+        width: 240px;
+        margin: 10px auto;
     }
 
 }
