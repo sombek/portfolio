@@ -22,7 +22,7 @@
     "roboto-npm-webfont": "0.0.2",
     "scroll-to": "0.0.2",
     "scrollprogress": "^3.0.2",
-    "validator": "7.0.0"
+    "validator": "13.7.0"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
